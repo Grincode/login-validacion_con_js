@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(/assets/view-city-sunset.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    margin: 15px;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    background-image: linear-gradient(120deg,
+            rgba(255, 255, 255, 0.3) rgba(0, 0, 0, 0.2));
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px black;
+    width: 350px;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #55151b;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 15px;
+}
+
+input[type="submit"]:hover {
+    background-color: #800915;
+    color: white;
+    border: 1px solid #a09595;
+    cursor: pointer;
+
+}
+
+.error-mensaje {
+    color: yellow;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    display: none;
+}
+
+#show-hide {
+    cursor: pointer;
+    position: relative;
+    top: -10px;
+    float: right;
+    color: #a09595;
+    border-bottom: 1px solid transparent;
+    transition: all 0.5s ease;
+
+}
+
+#show-hide:hover {
+    color: #d6d1d1;
+    border-bottom: 1px solid rgb(168, 167, 167);
+
+}
